@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Inflation Divide</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <span class="tag">GLOBAL ECONOMY</span>
+            <h1>The Great Inflation Divide: Why the Global Economy is Splitting in Two</h1>
+            <p class="subtitle">Two years after the post-pandemic shock, the world is no longer fighting a single inflation battle. Instead, we are seeing a dramatic split between nations returning to stability and those spiraling into hyperinflation.</p>
+            <div class="byline">By Data Analysis Unit | October 2025</div>
+        </div>
+    </header>
+
+    <article>
+        <section class="text-block">
+            <p><span class="dropcap">W</span>alk into a grocery store in Vienna, and prices are high but stable. Walk into a supermarket in Buenos Aires, and the price tag on a carton of milk might change before you reach the checkout counter.</p>
+            <p>Our analysis of economic data from over 100 countries between 2020 and 2024 reveals a startling trend. The synchronized global price shock of 2022 is over. In its place, a new, fractured economic reality has emerged. While much of the world celebrates a "soft landing," a significant minority of nations are facing a cost-of-living crisis of historic proportions.</p>
+        </section>
+
+        <section class="viz-block">
+            <h3>Part I: The Heat Map of 2024</h3>
+            <p class="caption-text">While the global average has cooled, "hotspots" in South America and the Middle East remain critically overheated.</p>
+            <div id="container-map" style="height: 500px; width: 100%;"></div>
+        </section>
+
+        <section class="text-block">
+            <h2>The Hyperinflation Trap</h2>
+            <p>To understand the scale of the disparity, we must look at the outliers. The most shocking data point in our 2024 dataset belongs to <strong>Argentina</strong>, where inflation hit a staggering <strong>249.8%</strong>.</p>
+            <p>This is not just a number on a spreadsheet; it represents the destruction of savings. In an economy running at 250% inflation, holding local currency is a guaranteed loss. In contrast, countries like <strong>Austria</strong> (3.9%) have successfully utilized interest rate hikes to bring price growth back under control.</p>
+        </section>
+
+        <section class="viz-block">
+            <h3>The Scale of Inequality (2024)</h3>
+            <p class="caption-text">Prices in Argentina are rising 64 times faster than in Austria.</p>
+            <div class="chart-container">
+                <canvas id="barChart"></canvas>
+            </div>
+        </section>
+
+        <section class="text-block">
+            <h2>The Kazakhstan Case Study</h2>
+            <p>Where does Kazakhstan fit in this global puzzle? The data places it in a unique transition zone.</p>
+            <p>Between 2020 and 2022, Kazakhstan followed the dangerous global trend. Inflation doubled from 6.8% to a peak of 15.0%. However, the 2024 data offers a glimmer of hope. With a rate of <strong>8.67%</strong>, the country has successfully "bent the curve." It is not yet in the green zone of stability (under 4%), but it has stepped back from the precipice.</p>
+        </section>
+
+        <section class="viz-block">
+            <h3>Kazakhstan: The Cooling Curve</h3>
+            <p class="caption-text">After peaking in 2022, inflation in Kazakhstan has nearly halved.</p>
+            <div class="chart-container">
+                <canvas id="lineChart"></canvas>
+            </div>
+        </section>
+
+        <section class="text-block">
+            <h2>Conclusion: The New Price Tag</h2>
+            <p>What does the data tell us about the future? The era of cheap money is gone. Even as inflation rates fall in 2025 and 2026, prices will not return to 2019 levels. They will simply grow slower.</p>
+            <p>For the global economy, the challenge of the next decade will not be fighting a universal fire, but managing a two-speed world where stability in the North contrasts sharply with volatility in the South.</p>
+        </section>
+        
+        <hr>
+
+        <section class="reflection">
+            <h4>UX Reflection (Milestone 4)</h4>
+            <ul>
+                <li><strong>Narrative Flow:</strong> Used a "Global to Local" structure (World Map -> Extreme Example -> Local Case).</li>
+                <li><strong>Hierarchy:</strong> Clear headings and a large Hero section to establish context immediately.</li>
+                <li><strong>Visuals:</strong> Interactive charts allow users to hover and see specific data points (249.8% vs 3.9%).</li>
+                <li><strong>Readability:</strong> Used serif fonts for body text and narrow columns to mimic professional news sites.</li>
+                <li><strong>Next Steps:</strong> Plan to add a "Personal Inflation Calculator" in the final version.</li>
+            </ul>
+        </section>
+    </article>
+
+    <footer>
+        <p>© 2026 Data Story Prototype. Created for Milestone 4.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
